@@ -1,6 +1,6 @@
 {
   "name": "shop-project",
-  "home": "https://johnnychikabila.github.io/ecomerce-project/",
+  "homepage": "https://johnnychikabila.github.io/ecomerce-project/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
