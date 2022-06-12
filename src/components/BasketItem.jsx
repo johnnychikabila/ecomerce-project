@@ -1,3 +1,7 @@
+import { useContext } from 'react';
+import { ShopContext } from '../context'
+
+
 function BasketItem(props) {
     const {
         mainId,         
@@ -6,11 +10,10 @@ function BasketItem(props) {
                 regularPrice 
               },
         quantity,
-        removeFromBasket = Function.prototype,
-        itemIncrement = Function.prototype,
-        itemDecrement = Function.prototype,
-        itemQuantity = Function.prototype,
     } = props;
+    
+    const { removeFromBasket, itemQuantity, } = useContext(ShopContext);
+
     return <li className="collection-item">
         {displayName} 
         <button id='btn-' className='item-qua-button' onClick={() => itemQuantity(mainId, quantity, '-')} >-</button> 
